@@ -36,6 +36,7 @@ namespace DS1820pxt {
   */
   //% blockId=probe_init
   //% block="connect temperature probe to %pin"
+  DS1820pxt(){}
   void init(Pins pin){
     if (probe != NULL) delete(probe);
     probe = new DS1820((PinName)pin);
